@@ -1,0 +1,5 @@
+{
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm build --filter client",
+  "outputDirectory": "apps/client/dist"
+}
