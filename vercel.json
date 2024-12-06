@@ -1,5 +1,5 @@
 {
-  "buildCommand": "chmod +x apps/client/vercel-build.sh && ./apps/client/vercel-build.sh",
+  "buildCommand": "cd apps/client && pnpm install && pnpm build",
   "outputDirectory": "apps/client/dist",
   "installCommand": "npm install -g pnpm",
   "regions": ["gru1"]
