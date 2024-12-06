@@ -1,22 +1,6 @@
 {
-  "framework": "vite",
   "buildCommand": "cd apps/client && pnpm install && pnpm build",
   "outputDirectory": "apps/client/dist",
   "installCommand": "pnpm install",
-  "regions": ["gru1"],
-  "builds": [
-    {
-      "src": "apps/client/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "zeroConfig": true
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/apps/client/dist/$1"
-    }
-  ]
+  "regions": ["gru1"]
 }
